@@ -1,0 +1,1 @@
+<?php echo array_reduce(array_filter(explode("\r\n", file_get_contents(__DIR__.'/1.txt'))), fn($a, $i) => $a === null ? [0, $i] : ($i > $a[1] ? [$a[0] + 1, $i] : [$a[0], $i]))[0];

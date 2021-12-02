@@ -1,0 +1,1 @@
+<?php echo array_sum(array_map(fn($x) => (array_sum(array_slice($GLOBALS['a'], $x+1, 3)) > array_sum(array_slice($GLOBALS['a'], $x, 3)) ? 1 : 0), range(0, count($GLOBALS['a'] = array_map(fn(string $x) => (int)$x, array_filter(explode("\r\n", file_get_contents(__DIR__.'/1.txt')), fn($x) => $x !== '')))-1)));
